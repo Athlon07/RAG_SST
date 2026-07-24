@@ -1,0 +1,15 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+venv/
+env/
+.venv/
+downloads/
+uploads/
+chroma_db/
+file_cache/
+sync_manifests/
+.DS_Store
+.vscode/
+.idea/

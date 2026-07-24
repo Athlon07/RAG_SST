@@ -1,0 +1,28 @@
+/* Add custom CSS here. app.py automatically loads this file if it exists. */
+
+/* Sidebar background - dark navy, professional look */
+section[data-testid="stSidebar"] {
+    background-color: #0B1F3A;
+}
+
+/* Keep sidebar text readable on the dark background */
+section[data-testid="stSidebar"] .stMarkdown,
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] h1,
+section[data-testid="stSidebar"] h2,
+section[data-testid="stSidebar"] h3,
+section[data-testid="stSidebar"] p,
+section[data-testid="stSidebar"] span {
+    color: #F5F7FA;
+}
+
+/* Sidebar divider (st.divider()) - lighten so it's visible on dark background */
+section[data-testid="stSidebar"] hr {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Radio button and slider labels sometimes render in a muted gray by default -
+   force them lighter too so they don't disappear against the navy background */
+section[data-testid="stSidebar"] [data-testid="stWidgetLabel"] p {
+    color: #F5F7FA;
+}
